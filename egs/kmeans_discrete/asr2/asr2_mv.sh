@@ -600,6 +600,7 @@ log "Skipped stages: ${skip_stages}"
 
 # ========================== Main stages start from here. ==========================
 
+### Ignore this step when the data is already in local and prepared!
 if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ] && ! [[ " ${skip_stages} " =~ [[:space:]]1[[:space:]] ]]; then
     log "Stage 1: Data preparation for data/${train_set}, data/${valid_set}, etc."
     # [Task dependent] Need to create data.sh for new corpus

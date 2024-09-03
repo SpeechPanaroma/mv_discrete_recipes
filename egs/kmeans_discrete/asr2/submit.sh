@@ -1,6 +1,6 @@
 #!/bin/bash -l
 
-#SBATCH -J MyST_baseline  #name of the job 
+#SBATCH -J mvLibri_baseline  #name of the job 
 #SBATCH --partition=gpu-all
 #SBATCH --cpus-per-task=32
 #SBATCH --gres=gpu:v100nv_32GB:2
@@ -15,6 +15,6 @@ echo "Running $SLURM_NTASKS tasks."
 echo "Job id is $SLURM_JOBID"
 echo "Job submission directory is : $SLURM_SUBMIT_DIR"
 source path.sh
-bash run_mv.sh
+bash run_mv_km2000_bpe_rm6k_ts5k.sh
 
 

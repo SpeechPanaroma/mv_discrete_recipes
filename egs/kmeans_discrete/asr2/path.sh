@@ -1,7 +1,7 @@
 MAIN_ROOT=/alt-asr/shchowdhury/tools/espnet_2023/espnet
 #/alt/qvoice/espnet-v.202402
 
-export PATH=$PWD/utils/:$PATH
+export PATH=$PWD/utils/:/usr/bin/:$PATH
 export LC_ALL=C
 
 if [ -f "${MAIN_ROOT}"/tools/activate_python.sh ]; then

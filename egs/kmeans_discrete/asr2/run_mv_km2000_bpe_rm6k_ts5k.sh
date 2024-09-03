@@ -33,6 +33,10 @@ tgt_case="ts"
 
 ./asr2_mv.sh \
     --kmeans_opts "--batch_bins 4800000 --nj 32" \
+    --nj 32 \
+    --stage 2 \
+    --stop_stage 4 \
+    --speed_perturb_factors "0.9 1.0 1.1" \
     --kmeans_feature "${kmeans_feature}" \
     --layer_index "${layer_index}" \
     --nclusters "${nclusters}" \
